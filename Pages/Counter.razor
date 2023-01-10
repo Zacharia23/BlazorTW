@@ -1,0 +1,17 @@
+@page "/counter"
+
+<PageTitle> Counter </PageTitle>
+
+<h1 class="text-2xl font-medium text-gray-500"> Counter Section </h1>
+
+<p class="mt-10 text-lg font-medium text-sky-600"> Current Count: @currentCount </p>
+
+<button @onclick="IncrementCount" class=" mt-5 bg-slate-600 px-12 py-2 rounded-md text-white hover:bg-slate-400"> Click me </button>
+
+@code {
+    private int currentCount = 0; 
+
+    private void IncrementCount() {
+        currentCount++;
+    }
+}
